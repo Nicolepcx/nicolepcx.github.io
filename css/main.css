@@ -1,0 +1,131 @@
+/*css for social icons */
+[class*="zocial-"]:before {
+  color: #02b3e4;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 2px 2px 2px #aaa;
+  width: 2em;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+}
+
+/*css for texts*/
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.headline-work {
+    padding-left:0.5em;
+    color: #7d97ad;
+    font-weight:300;
+    font-size: 38px;
+    margin-top: 1em;
+}
+
+.project_description {
+    font-size: 28px;
+    font-weight: 400;
+    color: #2d3c49;
+}
+
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.main-header {
+    text-align: right;
+    padding: 1em 0.2em;
+    border-bottom: 4px solid #7d97ad;
+}
+
+.full-width img {
+    width: 100%;
+    padding-top: 1.5em;
+}
+
+.list-header h1 {
+    margin: 0.75em 0 0 0.5em;
+}
+
+.project_card-list .project_card {
+    width: 32%;
+    text-align: center;
+}
+.project_card {
+    margin-top: 12px;
+    padding-bottom: 1em;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+}
+
+.project_card img {
+    width: 100%;
+}
+.project_card h1, .project_card a {
+    color: #7d97ad;
+    margin-bottom: 0;
+}
+
+/* Social Icons */
+div#social a {
+    margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 1.5em
+}
+
+/* Media Queries */
+@media screen and (max-width: 850px) {
+    * {
+        font-size: 14px;
+    }
+    .project_card-list .project_card {
+        width: 49%;
+    }
+}
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 11px;
+    }
+
+    .project_card-list .project_card {
+        width: 94%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .project_card-list.books .project_card img {
+        width: 50%;
+        padding-top: 1em;
+    }
+}
