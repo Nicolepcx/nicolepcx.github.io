@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger-Clone</title>
+    <!--Page Styles and Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 id="heading">Arcade Game</h1>
+        <div id="instruction">
+            <p>Use the arrow keys from your keyboard to reach to the other side as often as you can within 45 seconds! For reach time, you reached the opposite side, you gain 1 point!</p>
+            <h2>Collect these following items:</h2>
+            <ul>
+                <li><img src="images/GemGreenKopie.png" alt="green Gem" style="width:20px;height:34px;">: + 2 points</li>
+                <li><img src="images/GemOrangeKopie.png" alt="orange Gem" style="width:20px;height:34px;">: + 4 points</li>
+                <li><img src="images/Star.png" alt="Star" style="width:20px;height:34px;">: Enemie speed decrease one sec</li>
+                <li><img src="images/Heart.png" alt="Heart" style="width:20px;height:34px;">: Heart + one life</li>
+            </ul>
+            <h2>Avoid these following items:</h2>
+            <ul>
+                <li><img src="images/enemy-bug.png" alt="Bug" style="width:20px;height:34px;">: you lose one life!</li>
+                <li><img src="images/Rock.png" alt="Rock" style="width:20px;height:34px;">: you lose one life!</li>
+            </ul>
+        </div>
+        <div id="timer"></div>
+        <div id="life"></div>
+        <div id="score"></div>
+        <button id="start">Start</button>
+        <button id="try-again" onClick="history.go(0)">Try Again</button>
+    </header>
+
+    <div id="game-board"></div>
+    <div>
+        <h1 id="no-life"></h1>
+        <h1 id="gameOver-message"></h1>
+    </div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    </div>
+</body>
+</html>
