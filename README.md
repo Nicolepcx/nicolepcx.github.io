@@ -20,4 +20,4 @@
 * To play the Game, hit the Start-Button.
 * Use your arrow keys of your keboard to control your player.
 
-[Play](http://nicolepcx.github.io./ "Demo")
+* [Play](http://nicolepcx.github.io./ "Demo")
