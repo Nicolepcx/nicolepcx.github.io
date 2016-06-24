@@ -125,22 +125,22 @@ var Engine = (function(global) {
         updateEntities(dt);
         game.checkCollisions();
         game.checkDestination();
-        game.checkPlayerHelpers();
+        game.checkplayer_Helpers();
     }
 
     /**
      * This is called by the update function and loops through all of the
-     * objects within the allEnemies array as defined in app.js and calls
+     * objects within the all_Enemies array as defined in app.js and calls
      * their update() methods.
      * @param {number} dt A time delta between ticks
      * @return {void}
      */
     function updateEntities(dt) {
-        game.allEnemies.forEach(function(enemy) {
+        game.all_Enemies.forEach(function(enemy) {
             enemy.update(dt);
         });
         game.player.update(dt);
-        game.playerHelper.update(dt);
+        game.player_Helper.update(dt);
     }
 
     /**
@@ -200,11 +200,11 @@ var Engine = (function(global) {
      * return {void}
      */
     function renderEntities() {
-        game.allEnemies.forEach(function(enemy) {
+        game.all_Enemies.forEach(function(enemy) {
             enemy.render();
         });
         game.player.render();
-        game.playerHelper.render();
+        game.player_Helper.render();
         game.render();
     }
 
